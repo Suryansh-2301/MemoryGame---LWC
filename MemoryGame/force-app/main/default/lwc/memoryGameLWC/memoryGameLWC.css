@@ -48,14 +48,25 @@
     box-shadow: 5px 2px 20px 0 rgba(46, 61,73, 0.5);
 }
 
-.card .open{
+.grid-container .card.open{
     transform: rotateY(0);
     background: #02b3e4;
     cursor: default;
-    animation-name: fipInY;
+    animation-name: flipInY;
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     animation-duration: 0.75s;
+}
+
+.grid-container .card.show{
+    font-size: 33px;
+    opacity: 100 !important;
+    visibility: visible !important;
+}
+
+.grid-container .card.disabled{
+    pointer-events: none;
+    opacity: 0.9;
 }
 
 /* animation in css */

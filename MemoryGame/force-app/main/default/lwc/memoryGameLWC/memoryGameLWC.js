@@ -42,7 +42,7 @@ export default class MemoryGameLWC extends LightningElement {
 
     }
 
-    displyaCard(event){
+    displayCard(event){
         let currentCard = event.target
         currentCard.classList.add("open","show","disabled");
     }
